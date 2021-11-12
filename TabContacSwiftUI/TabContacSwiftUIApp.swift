@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TabContacSwiftUIApp: App {
+    
+    let persons = Person.getContactList()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView(persons: persons)
         }
     }
 }
